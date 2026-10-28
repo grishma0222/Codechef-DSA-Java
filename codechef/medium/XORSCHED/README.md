@@ -71,7 +71,7 @@ The CPU is idle until time $4$, executes process $2$ during $[4, 5]$, is idle ag
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T16:57:12.615Z  
+**Submitted:** 2026-10-28T16:59:20.010Z  
 
 ```java
 import java.util.*;
