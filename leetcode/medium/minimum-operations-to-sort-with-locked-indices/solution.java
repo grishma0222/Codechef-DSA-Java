@@ -1,23 +1,40 @@
 class Solution {
     public int minOperations(int[] nums, int[] locked, int k) {
         int n=nums.length;
-        int unlock=0;
-        long swaps=0;
-        for(int i=0;i<n;i++)
+       boolean[] need=new boolean[n];
+        int max=0;
+        for(int i=0;i<n-1;i++)
         {
-            if(nums[i]!=i+1 && locked[i]==1){
-                unlock++;
-            }
-            if(unlock>k) return-1 ;
+            max=Math.max(max,nums[i]);
+            if(max>i+1){
+                need[i]=true;
+                need[i+1]=true;            }
+           
         }
+        int unlock=0;
             for(int i=0;i<n;i++){
-                for(int j=i+1;j<n;j++){
-                    if(nums[i]>nums[j]){
-                        swaps++;
-                    }
-                }
+               if(need[i] && locked[i]==1){
+                   unlock++;
+               }
+                if(unlock>k){return -1;}
             }
-            return (int)(swaps+unlock);
+       int[] bit=new int[n+1];
+        long swaps=0;
+        
+            for(int i=n-1;i>=0;i--){
+                int x=nums[i];
+                for(int j=x-1;j>0;j -=j &-j)
+                {
+                    swaps +=bit[j];
+                }
+                for(int j=x;j<=n;j +=j &-j)
+                {
+                    bit[j]++;
+                }
+            
+        }
+        return (int)(swaps+unlock);
+            
         
     }
 }
