@@ -67,7 +67,7 @@ Anna didn't eat item $bill[1] = 10$, but she shared the rest of the items with B
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-01T08:42:44.580Z  
+**Submitted:** 2026-11-01T08:43:05.049Z  
 
 ```java
 import java.io.*;
