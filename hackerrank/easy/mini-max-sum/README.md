@@ -40,7 +40,7 @@ $1 \le arr[i] \le 10^9$
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-01T06:05:58.442Z  
+**Submitted:** 2026-11-01T06:07:11.188Z  
 
 ```java
 import java.io.*;
@@ -66,7 +66,7 @@ class Result {
     public static void miniMaxSum(List<Integer> arr) {
     // Write your code here
 int n=arr.size();
-int sum=0;
+long  sum=0;
 for(int i=0;i<n;i++){
     sum +=arr.get(i);
     
