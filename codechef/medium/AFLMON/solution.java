@@ -12,7 +12,6 @@ class Codechef
 	{
 	    int n=sc.nextInt();
 	    int[] arr=new int[n];
-	    int k=0;
 	    for(int i=0;i<n;i++)
 	    {
 	        arr[i]=sc.nextInt();
