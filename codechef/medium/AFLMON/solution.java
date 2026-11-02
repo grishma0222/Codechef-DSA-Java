@@ -20,9 +20,10 @@ class Codechef
 	    int c=0;
 	    for(int i=0;i<n;i++)
 	    {
-	        int right=n-i-1;
-	        int left=i;
-	        if(left<=right){
+	        int left=i+1;
+	        int right=n-left;
+	        
+	        if(left>right){
 	            c++;
 	        }
 	    }
