@@ -20,9 +20,6 @@ class Codechef
 	    int c=0;
 	    for(int i=0;i<n;i++)
 	    {
-	        if(arr[i]==arr[i+1]){
-	            System.out.println(n);
-	        }
 	        int right=n-i-1;
 	        int left=i;
 	        if(left<=right){
