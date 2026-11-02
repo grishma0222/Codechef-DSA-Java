@@ -53,7 +53,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-02T16:14:45.583Z  
+**Submitted:** 2026-11-02T16:20:14.461Z  
 
 ```java
 import java.util.*;
@@ -70,7 +70,6 @@ class Codechef
 	{
 	    int n=sc.nextInt();
 	    int[] arr=new int[n];
-	    int k=0;
 	    for(int i=0;i<n;i++)
 	    {
 	        arr[i]=sc.nextInt();
