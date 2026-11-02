@@ -53,7 +53,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-02T16:05:11.234Z  
+**Submitted:** 2026-11-02T16:14:36.086Z  
 
 ```java
 import java.util.*;
@@ -70,23 +70,29 @@ class Codechef
 	{
 	    int n=sc.nextInt();
 	    int[] arr=new int[n];
+	    int k=0;
 	    for(int i=0;i<n;i++)
 	    {
 	        arr[i]=sc.nextInt();
 	    }
-	    Arrays.sort(arr);
 	    int c=0;
 	    for(int i=0;i<n;i++)
 	    {
-	        int left=i+1;
-	        int right=n-left;
+	        int count=0;
+	       for(int j=0;j<n;j++)
+	       {
+	           if(arr[i]>=arr[j]){
+	               count++;
+	           }
+	       }
 	        
-	        if(left>right){
+	        if(count>n-count){
 	            c++;
 	        }
-	    }
+	}
+	 
 	    System.out.println(c);
-	    	}
+	}
 
 	}
 }
