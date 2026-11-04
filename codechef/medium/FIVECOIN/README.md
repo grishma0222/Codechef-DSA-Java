@@ -78,7 +78,7 @@ Use the $5$-rupee coin and three $1$-rupee coins.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T15:37:07.071Z  
+**Submitted:** 2026-11-04T15:37:33.794Z  
 
 ```java
 import java.util.*;
