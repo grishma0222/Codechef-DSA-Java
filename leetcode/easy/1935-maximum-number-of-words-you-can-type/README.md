@@ -50,9 +50,9 @@ Explanation: We cannot type either word because the 'e' key is broken.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 4 ms (beats 32.92%)  
-**Memory:** 42.4 MB (beats 98.96%)  
-**Submitted:** 2026-11-08T10:30:15.462Z  
+**Runtime:** 0 ms  
+**Memory:** 41.8 MB  
+**Submitted:** 2026-11-08T10:30:29.411Z  
 
 ```java
 class Solution {
