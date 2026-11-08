@@ -51,8 +51,8 @@ Explanation: We cannot type either word because the 'e' key is broken.
 
 **Language:** Java  
 **Runtime:** 4 ms (beats 32.92%)  
-**Memory:** 42.4 MB (beats 98.96%)  
-**Submitted:** 2026-11-08T10:31:42.927Z  
+**Memory:** 42 MB (beats 100.00%)  
+**Submitted:** 2026-11-08T10:30:50.683Z  
 
 ```java
 class Solution {
