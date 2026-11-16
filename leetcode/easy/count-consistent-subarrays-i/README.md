@@ -67,8 +67,8 @@ The only subarray is `[0]`, whose bitwise AND and minimum value are both 0. Ther
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 41.6 MB  
-**Submitted:** 2026-11-15T03:33:18.391Z  
+**Memory:** 41.9 MB  
+**Submitted:** 2026-11-15T03:46:06.155Z  
 
 ```java
 class Solution {
@@ -77,9 +77,9 @@ class Solution {
         int c=0,min=0;
         for(int i=0;i<n;i++){
             int ans=0;
-            for(int j=i;j<n;j++){
+            for(int j=0;j<=i;j++){
                min=Math.min(nums[i],nums[j]);
-                 ans = ans & nums[i] & nums[j];
+                 ans =  nums[i] & nums[j];
             }
                 if(ans==min){
                     c++;
